@@ -1,0 +1,54 @@
+#include <stdio.h>
+int main()
+{
+    int s0, s1, s2, s3, s4, Total = 0;
+    float Percentage;
+    printf("My name is ravi ranjan\n");
+    printf("Enter the marks you have obtained:\n");
+    scanf("%d%d%d%d%d", &s0, &s1, &s2, &s3, &s4);
+    if (s0 < 0 || s0 > 101 || s1 >101 || s1 <0 || s2 < 0 ||
+         s2 > 101 || s3 < 0 || s3 > 101 || s4 < 0 || s4 > 101)
+    {
+        printf("\nMarks is Invalid");
+        printf("\n\n");
+        return 1;
+    }
+    Total = s0 + s1 + s2 + s3 + s4;
+    printf("\nTotal marks Is: %d\n", Total);
+    Percentage = Total / 5.0;
+    printf("Obtained Percentage Is: %.2f%%\n", Percentage);
+    if (Percentage >= 90)
+
+        printf("Congrats Your Grade is A+\n");
+       
+
+    else if (Percentage >= 80)
+        printf("Congrats Your Grade is A\n");
+    else if (Percentage >= 70)
+        printf("Your Grade Is B\n");
+    else if (Percentage >= 60)
+        printf("Your Grade Is C\n");
+    else if (Percentage >= 40)
+        printf("Your Grade Is D\n");
+    else
+        printf("Your Grade Is F\n");
+    printf("\n");
+    return 0;
+}
+/*
+OUTPUT:
+
+PS E:\C Program> cd "e:\C Program\printf(Salam)\" ; if ($?)
+ { gcc or6.c -o or6 } ; if ($?) { .\or6 }
+Enter the marks you have obtained:
+85
+90
+78
+98
+77
+
+Total marks Is: 428
+Obtained Percentage Is: 85.60%
+Congrats Your Grade is A
+
+PS E:\C Program\printf(Salam)> */
