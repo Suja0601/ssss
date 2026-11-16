@@ -1,0 +1,61 @@
+#include <stdio.h>
+int main()
+{
+    int marks[5], i, Total = 0;
+    float Percentage;
+    char *subject[] =
+        {
+            "physics", "Chemistry", "Mathematics",
+             "English", "Computer"
+
+    };
+    for (i = 0; i < 5; i++)
+    {
+        printf("%s: ", subject[i]);
+        scanf("%d", &marks[i]);
+        if (marks[i] < 0 || marks[i] > 100)
+        {
+            printf("\n Marks invalid\n");
+            printf("\n");
+            return 1;
+        }
+
+        Total = Total + marks[i];
+    }
+
+    Percentage = Total / 5.0;
+    printf("\nTotal Marks=%d\n", Total);
+    printf("Percentage=%.2f%%\n", Percentage);
+
+    if (Percentage >= 90)
+
+        printf("Grade A+\n");
+    else if (Percentage >= 80)
+        printf("Grade A\n");
+    else if (Percentage >= 70)
+        printf("grade B\n");
+    else if (Percentage >= 60)
+        printf("Grade C\n");
+    else if (Percentage >= 40)
+        printf("Grade D\n");
+    else
+        printf("Grade F\n");
+    printf("\n");
+    return 0;
+}
+
+/*  OUTPUT:
+
+PS E:\C Program> cd "e:\C Program\printf(Salam)\" ; 
+if ($?) { gcc lab6.c -o lab6 } ; if ($?) { .\lab6 }
+physics: 91
+Chemistry: 100
+Mathematics: 100
+English: 0
+Computer: 96
+
+Total Marks=387
+Percentage=77.40%
+grade B
+
+PS E:\C Program\printf(Salam)>*/
