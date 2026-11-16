@@ -1,0 +1,50 @@
+#include <stdio.h>
+int main()
+{
+    int i, n, sum = 0, digit=0;
+    printf("Enter a number to check Armstrong\n");
+    scanf("%d", &n);
+    if (n == 0)
+    {
+        digit = 1;
+    }
+    while (n > 0)
+    {
+        // digit = n % 10;
+        // sum = sum + (digit * digit * digit);
+        n= n/10;
+        digit++;
+    }
+        printf("%d", digit);
+    
+    return 0;
+}
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int n, original_number, digit = 0;
+    
+//     // Message ko change kiya taaki confusion na ho
+//     printf("Enter a number to count digits:\n");
+//     scanf("%d", &n);
+    
+//     original_number = n; // Original number ko safe rakhne ke liye
+    
+//     if (n == 0)
+//     {
+//         digit = 1;
+//     }
+    
+//     while (n > 0)
+//     {
+//         n = n / 10;
+//         digit++;
+//     }
+    
+//     // Output ko thoda descriptive banaya
+//     printf("Total digits in %d is: %d\n", original_number, digit);
+    
+//     return 0;
+// }
