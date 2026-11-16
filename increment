@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    int a = 10, b;
+
+    b = a++;
+    /* yaha value a=11 hogi coz a ki value b me aayegi to a= 11,and b ki value 10 coz a ki value B me aayegi aur b=a++ hai to pahle a hai isliye b=10 wahi decrement me ++a yaha a baad me aayega to b ki value 11 hogi kyunki  */
+    printf("post-Increment(a++): a=%d,b=%d\n", a, b);
+
+    a = 10;
+    b = ++a;
+    printf("pre-Increment(++a): a=%d,b=%d\n", a, b);
+    a=10;
+    b=a--;
+    printf("post-Decrement(a--): a=%d,b=%d\n",a,b);
+    a=10;
+    b=--a;
+    printf("pre-Decrement(--a): a=%d,b=%d\n",a,b);
+
+    printf("\n");
+    return 0;
+}
