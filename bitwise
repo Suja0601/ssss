@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int a,b;
+printf("Enter First Number\n");
+scanf("%d",&a);
+printf("Enter Second Number\n");
+scanf("%d",&b);
+printf("Bitwise AND =%d\n",a&b);
+printf("Bitwise OR =%d\n",a|b);
+printf("Bitwise XOR =%d\n",a^b);
+printf("Bitwise NOt =%d\n",~a);
+printf("Bitwise Not =%d\n",~b);
+printf("Left Shift =%d\n",a<<b);
+printf("Right Shift =%d\n",a>>b);
+return 0;
+}
