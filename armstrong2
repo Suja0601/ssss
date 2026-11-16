@@ -1,0 +1,53 @@
+#include<stdio.h>
+int main()
+{
+/*Write a program to print series of arm-strong numbers from m to n where value of m and n will be input by user.*/
+int i,n,sum=0,remainder,p,q;
+printf("Enter Starting Number\n");
+scanf("%d",&p);
+printf("Enter Ending Number\n");
+scanf("%d",&q);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    return 0;
+}
