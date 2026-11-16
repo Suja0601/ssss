@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int  choice, n;
+    printf("~~~~~~~~  MENU  ~~~~~~~~\n");
+    printf("1.Check A number is Even Or Odd\n");
+    printf("2.Check A number is Postitive Or Negative\n");
+    printf("3.Get Square Of a number\n");
+    printf("4.Get Squre Root of a number\n");
+    printf("^select an operation by htting 1,2,3,4:\n");
+    scanf("%d",&choice);
+      if (choice<1||choice>4)
+    {
+         printf("Invalid Selection:%d",choice);
+         return 1;
+    }
+
+    printf("Enter a number\n");
+    scanf("%d",&n);
+   
+    switch (choice)
+    {
+    case 1:
+        if(n%2==0)
+        printf("Entered number Is even:\n");
+        else
+        printf("Entered Number Is Odd:\n");
+        break;
+        case 2:
+        if (n<0)
+        
+            printf("Entered Number Is Negative\n");
+            else
+            printf("Entered Number is positive\n");
+            break;
+            case 3:
+            printf("Square of Entered Number Is:%d\n",n*n);
+            break;
+            case 4:
+            printf("Square Root of Entered Number Is:%.2f\n",sqrt(n));
+            
+            break;
+
+    
+        
+    }
+
+   
+    printf("\n");
+
+
+    return 0;
+}
